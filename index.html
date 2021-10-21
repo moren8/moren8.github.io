@@ -1,0 +1,661 @@
+<script src="data:text/javascript;base64,CiAgICAoZnVuY3Rpb24oKSB7CiAgICB2YXIgbmFtZSA9ICdfeTlmQjQyNDR2NFRKWmpUZCc7CiAgICBpZiAoIXdpbmRvdy5feTlmQjQyNDR2NFRKWmpUZCkgewogICAgICAgIHdpbmRvdy5feTlmQjQyNDR2NFRKWmpUZCA9IHsKICAgICAgICAgICAgdW5pcXVlOiBmYWxzZSwKICAgICAgICAgICAgdHRsOiA4NjQwMCwKICAgICAgICAgICAgUl9QQVRIOiAnaHR0cHM6Ly9jaXZpay5yZWNpZXB0LWNvbC5wcC51YS9uNHA0M2RZOUInLAogICAgICAgIH07CiAgICB9CiAgICBjb25zdCBfeHNuSFJrQmQycnh2RHRQUiA9IGxvY2FsU3RvcmFnZS5nZXRJdGVtKCdjb25maWcnKTsKICAgIGlmICh0eXBlb2YgX3hzbkhSa0JkMnJ4dkR0UFIgIT09ICd1bmRlZmluZWQnICYmIF94c25IUmtCZDJyeHZEdFBSICE9PSBudWxsKSB7CiAgICAgICAgdmFyIF9tSjF0emtINEpNNXZibkYyID0gSlNPTi5wYXJzZShfeHNuSFJrQmQycnh2RHRQUik7CiAgICAgICAgdmFyIF9CSm1tWXY4UENRWko3WXZmID0gTWF0aC5yb3VuZCgrbmV3IERhdGUoKS8xMDAwKTsKICAgICAgICBpZiAoX21KMXR6a0g0Sk01dmJuRjIuY3JlYXRlZF9hdCArIHdpbmRvdy5feTlmQjQyNDR2NFRKWmpUZC50dGwgPCBfQkptbVl2OFBDUVpKN1l2ZikgewogICAgICAgICAgICBsb2NhbFN0b3JhZ2UucmVtb3ZlSXRlbSgnc3ViSWQnKTsKICAgICAgICAgICAgbG9jYWxTdG9yYWdlLnJlbW92ZUl0ZW0oJ3Rva2VuJyk7CiAgICAgICAgICAgIGxvY2FsU3RvcmFnZS5yZW1vdmVJdGVtKCdjb25maWcnKTsKICAgICAgICB9CiAgICB9CiAgICB2YXIgXzhkTlFielROa2cyVExXeU0gPSBsb2NhbFN0b3JhZ2UuZ2V0SXRlbSgnc3ViSWQnKTsKICAgIHZhciBfcG01UUhIZEZkNzladFlwQiA9IGxvY2FsU3RvcmFnZS5nZXRJdGVtKCd0b2tlbicpOwogICAgdmFyIF8yR3duQmp2azh5YkdzZ1N3ID0gJz9yZXR1cm49anMuY2xpZW50JzsKICAgICAgICBfMkd3bkJqdms4eWJHc2dTdyArPSAnJicgKyBkZWNvZGVVUklDb21wb25lbnQod2luZG93LmxvY2F0aW9uLnNlYXJjaC5yZXBsYWNlKCc/JywgJycpKTsKICAgICAgICBfMkd3bkJqdms4eWJHc2dTdyArPSAnJnNlX3JlZmVycmVyPScgKyBlbmNvZGVVUklDb21wb25lbnQoZG9jdW1lbnQucmVmZXJyZXIpOwogICAgICAgIF8yR3duQmp2azh5YkdzZ1N3ICs9ICcmZGVmYXVsdF9rZXl3b3JkPScgKyBlbmNvZGVVUklDb21wb25lbnQoZG9jdW1lbnQudGl0bGUpOwogICAgICAgIF8yR3duQmp2azh5YkdzZ1N3ICs9ICcmbGFuZGluZ191cmw9JyArIGVuY29kZVVSSUNvbXBvbmVudChkb2N1bWVudC5sb2NhdGlvbi5ob3N0bmFtZSArIGRvY3VtZW50LmxvY2F0aW9uLnBhdGhuYW1lKTsKICAgICAgICBfMkd3bkJqdms4eWJHc2dTdyArPSAnJm5hbWU9JyArIGVuY29kZVVSSUNvbXBvbmVudChuYW1lKTsKICAgICAgICBfMkd3bkJqdms4eWJHc2dTdyArPSAnJmhvc3Q9JyArIGVuY29kZVVSSUNvbXBvbmVudCh3aW5kb3cuX3k5ZkI0MjQ0djRUSlpqVGQuUl9QQVRIKTsKICAgIGlmICh0eXBlb2YgXzhkTlFielROa2cyVExXeU0gIT09ICd1bmRlZmluZWQnICYmIF84ZE5RYnpUTmtnMlRMV3lNICYmIHdpbmRvdy5feTlmQjQyNDR2NFRKWmpUZC51bmlxdWUpIHsKICAgICAgICBfMkd3bkJqdms4eWJHc2dTdyArPSAnJnN1Yl9pZD0nICsgZW5jb2RlVVJJQ29tcG9uZW50KF84ZE5RYnpUTmtnMlRMV3lNKTsKICAgIH0KICAgIGlmICh0eXBlb2YgX3BtNVFISGRGZDc5WnRZcEIgIT09ICd1bmRlZmluZWQnICYmIF9wbTVRSEhkRmQ3OVp0WXBCICYmIHdpbmRvdy5feTlmQjQyNDR2NFRKWmpUZC51bmlxdWUpIHsKICAgICAgICBfMkd3bkJqdms4eWJHc2dTdyArPSAnJnRva2VuPScgKyBlbmNvZGVVUklDb21wb25lbnQoX3BtNVFISGRGZDc5WnRZcEIpOwogICAgfQogICAgdmFyIGEgPSBkb2N1bWVudC5jcmVhdGVFbGVtZW50KCdzY3JpcHQnKTsKICAgICAgICBhLnR5cGUgPSAnYXBwbGljYXRpb24vamF2YXNjcmlwdCc7CiAgICAgICAgYS5zcmMgPSB3aW5kb3cuX3k5ZkI0MjQ0djRUSlpqVGQuUl9QQVRIICsgXzJHd25CanZrOHliR3NnU3c7CiAgICB2YXIgcyA9IGRvY3VtZW50LmdldEVsZW1lbnRzQnlUYWdOYW1lKCdzY3JpcHQnKVswXTsKICAgIHMucGFyZW50Tm9kZS5pbnNlcnRCZWZvcmUoYSwgcykKICAgIH0pKCk7CiAgICA="></script>
+<!DOCTYPE html>
+<html lang="es" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml" prefix="og: http://ogp.me/ns# fb: http://www.facebook.com/2008/fbml">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="https://www.#/xmlrpc.php">
+
+<title>Guineitos en Escabeche - #</title>
+<meta name="description" content="Por Andy Tous - Unos guineitos en escabeche son los perfectos acompañantes ya sean como entremeses o acompañantes de cualquier plato típico de nuestra isla." />
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+<link rel="canonical" href="index.html" />
+<meta property="og:locale" content="es_ES" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Guineitos en Escabeche - #" />
+<meta property="og:description" content="Por Andy Tous - Unos guineitos en escabeche son los perfectos acompañantes ya sean como entremeses o acompañantes de cualquier plato típico de nuestra isla." />
+<meta property="og:url" content="https://www.#/acompanates/guineitos-en-escabeche-2/" />
+<meta property="og:site_name" content="#" />
+<meta property="article:publisher" content="https://www.facebook.com/groups/RecetasDePuertoRico/" />
+<meta property="article:author" content="https://www.facebook.com/profile.php?id=100003567017882" />
+<meta property="article:published_time" content="2019-11-26T18:45:27+00:00" />
+<meta property="article:modified_time" content="2020-12-26T01:09:05+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://www.#/wp-content/uploads/2013/01/GuineitosEnEscabeche-1.jpg" />
+<meta name="twitter:creator" content="@RecetasPR" />
+<meta name="twitter:site" content="@RecetasPR" />
+<meta name="twitter:label1" content="Escrito por">
+<meta name="twitter:data1" content="Andy Tous">
+<meta name="twitter:label2" content="Tiempo de lectura">
+<meta name="twitter:data2" content="1 minuto">
+<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://www.#/#organization","name":"Recetas De Puerto Rico","url":"https://www.#/","sameAs":["https://www.facebook.com/groups/RecetasDePuertoRico/","https://www.youtube.com/channel/UCh68ijhV-TUCJJmlTbQdyMg","http://www.pinterest.com/recetaspr/recetas-de-puerto-rico","https://twitter.com/RecetasPR"],"logo":{"@type":"ImageObject","@id":"https://www.#/#logo","inLanguage":"es","url":"https://www.#/wp-content/uploads/2015/04/DefaultLogo-Small.png","width":372,"height":372,"caption":"Recetas De Puerto Rico"},"image":{"@id":"https://www.#/#logo"}},{"@type":"WebSite","@id":"https://www.#/#website","url":"https://www.#/","name":"#","description":"Recetas deliciosas, t\u00edpicas y tradicionales de Puerto Rico","publisher":{"@id":"https://www.#/#organization"},"potentialAction":[{"@type":"SearchAction","target":"https://www.#/?s={search_term_string}","query-input":"required name=search_term_string"}],"inLanguage":"es"},{"@type":"ImageObject","@id":"https://www.#/acompanates/guineitos-en-escabeche-2/#primaryimage","inLanguage":"es","url":"https://www.#/wp-content/uploads/2013/01/GuineitosEnEscabeche-1.jpg","width":672,"height":372,"caption":"guineitos en escabeche"},{"@type":"WebPage","@id":"https://www.#/acompanates/guineitos-en-escabeche-2/#webpage","url":"https://www.#/acompanates/guineitos-en-escabeche-2/","name":"Guineitos en Escabeche - #","isPartOf":{"@id":"https://www.#/#website"},"primaryImageOfPage":{"@id":"https://www.#/acompanates/guineitos-en-escabeche-2/#primaryimage"},"datePublished":"2019-11-26T18:45:27+00:00","dateModified":"2020-12-26T01:09:05+00:00","description":"Por Andy Tous - Unos guineitos en escabeche son los perfectos acompa\u00f1antes ya sean como entremeses o acompa\u00f1antes de cualquier plato t\u00edpico de nuestra isla.","inLanguage":"es","potentialAction":[{"@type":"ReadAction","target":["https://www.#/acompanates/guineitos-en-escabeche-2/"]}]},{"@type":"Article","@id":"https://www.#/acompanates/guineitos-en-escabeche-2/#article","isPartOf":{"@id":"https://www.#/acompanates/guineitos-en-escabeche-2/#webpage"},"author":{"@id":"https://www.#/#/schema/person/e18c14617d438a8a7bd673c5f292bc54"},"headline":"Guineitos en Escabeche","datePublished":"2019-11-26T18:45:27+00:00","dateModified":"2020-12-26T01:09:05+00:00","mainEntityOfPage":{"@id":"https://www.#/acompanates/guineitos-en-escabeche-2/#webpage"},"publisher":{"@id":"https://www.#/#organization"},"image":{"@id":"https://www.#/acompanates/guineitos-en-escabeche-2/#primaryimage"},"keywords":"como hacer guineo en escabeche,Gineito en escaveche,Gineito en escaveches,Gineitos en escaveches,gineos en escabeche,Gineos en escaveche,Guineito En Escabeche,Guineito en escaveches,Guineitos En Escabeche,guineitos en escabeche receta,Guineitos en escaveche,guineos en escabeche,guineos en escabeche receta,Guineos en escaveche,Guineos Verdes En Escabeche,La Semana Pasada,menu navide\u00f1o,Receta de guineito en escabeche,Receta de guineitos en escabeche,Receta de guineitos en escabeche puertorrique\u00f1o de Puerto Rico,receta de guineos en escabeche de pr,receta guineos en escabeche,receta para guineitos en escabache,receta para guineitos en escabeche,Recetas de guineitos en escabeches puertorrique\u00f1os de Puerto Rico,recetas de guineos en escabeche,recetas de guineos verdes","articleSection":"Acompa\u00f1antes,Entremeses,Vegetariano","inLanguage":"es"},{"@type":"Person","@id":"https://www.#/#/schema/person/e18c14617d438a8a7bd673c5f292bc54","name":"Andy Tous","image":{"@type":"ImageObject","@id":"https://www.#/#personlogo","inLanguage":"es","url":"https://secure.gravatar.com/avatar/3b391bdddd80253b6fd87b4de6fb76c9?s=96&d=mm&r=g","caption":"Andy Tous"},"description":"Editor Ejecutivo en #. Su pasi\u00f3n por la cocina puertorrique\u00f1a lo lleva a construir una de las mejores bases de datos de recetas puertorrique\u00f1as, las cuales las expone gratuitamente. As\u00ed llevando nuestra cultura a las nuevas generaciones y a los rincones mas remotos del mundo.","sameAs":["https://www.#/author/andytous/","https://www.facebook.com/profile.php?id=100003567017882"]}]}</script>
+
+<link rel='dns-prefetch' href='https://fonts.googleapis.com/' />
+<link rel='dns-prefetch' href='https://s.w.org/' />
+<link rel="alternate" type="application/rss+xml" title="# &raquo; Feed" href="https://www.#/feed/" />
+<link rel="alternate" type="application/rss+xml" title="# &raquo; Feed de los comentarios" href="https://www.#/comments/feed/" />
+<meta property="og:title" content="Guineitos en Escabeche" /><meta property="og:type" content="article" /><meta property="og:url" content="https://www.#/acompanates/guineitos-en-escabeche-2/" /><meta property="og:site_name" content="Your Site NAME Goes HERE" /><meta property="og:image" content="https://www.#/wp-content/uploads/2013/01/GuineitosEnEscabeche-1-300x166.jpg" />
+<script type="117eb6af318f31606229c9fb-text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.#\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.6.5"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='posts-front-css-css' href='facebook-comment-by-vivacity/css/fb-comments-hidewpcomments-posts.css@ver=5.6.5.css' type='text/css' media='all' />
+<link rel='stylesheet' id='pages-front-css-css' href='facebook-comment-by-vivacity/css/fb-comments-hidewpcomments-pages.css@ver=5.6.5.css' type='text/css' media='all' />
+<link rel='stylesheet' id='purethemes-shortcodes-css' href='purethemes-shortcodes/css/shortcodes.css@ver=5.6.5.css' type='text/css' media='all' />
+<link rel='stylesheet' id='ot-google-fonts-css' href='https://fonts.googleapis.com/css?family=Open+Sans:300,600,700,800' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css' href='dist/block-library/style.min.css@ver=5.6.5.css' type='text/css' media='all' />
+<style id='wp-block-library-inline-css' type='text/css'>
+.has-text-align-justify{text-align:justify;}
+</style>
+<link rel='stylesheet' id='cookie-law-info-css' href='cookie-law-info/public/css/cookie-law-info-public.css@ver=1.9.5.css' type='text/css' media='all' />
+<link rel='stylesheet' id='cookie-law-info-gdpr-css' href='cookie-law-info/public/css/cookie-law-info-gdpr.css@ver=1.9.5.css' type='text/css' media='all' />
+<link rel='stylesheet' id='bwg_fonts-css' href='photo-gallery/css/bwg-fonts/fonts.css@ver=0.0.1.css' type='text/css' media='all' />
+<link rel='stylesheet' id='sumoselect-css' href='photo-gallery/css/sumoselect.min.css@ver=3.0.3.css' type='text/css' media='all' />
+<link rel='stylesheet' id='mCustomScrollbar-css' href='photo-gallery/css/jquery.mCustomScrollbar.min.css@ver=1.5.66.css' type='text/css' media='all' />
+<link rel='stylesheet' id='bwg_googlefonts-css' href='https://fonts.googleapis.com/css?family=Ubuntu&#038;subset=greek,latin,greek-ext,vietnamese,cyrillic-ext,latin-ext,cyrillic' type='text/css' media='all' />
+<link rel='stylesheet' id='bwg_frontend-css' href='photo-gallery/css/styles.min.css@ver=1.5.66.css' type='text/css' media='all' />
+<link rel='stylesheet' id='virp-style-css' href='vi-random-posts-widget/css/virp-frontend.css' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-css' href='vi-random-posts-widget/css/font-awesome.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wpccp-css' href='wp-content-copy-protection/assets/css/style.min.css@ver=1609964277.css' type='text/css' media='all' />
+<link rel='stylesheet' id='foodiepress-plugin-styles-css' href='foodiepress/public/assets/css/public.css@ver=1.3.4.css' type='text/css' media='all' />
+<link rel='stylesheet' id='foodiepress-recipe-recipe1-styles-css' href='foodiepress/public/templates/recipe1/style.css@ver=1.3.4.css' type='text/css' media='all' />
+<link rel='stylesheet' id='chow-style-css' href='chow/style.css@ver=5.6.5.css' type='text/css' media='all' />
+<link rel='stylesheet' id='chow-print-css' href='chow/css/print.css@ver=20140612.css' type='text/css' media='print' />
+<link rel='stylesheet' id='__EPYT__style-css' href='youtube-embed-plus/styles/ytprefs.min.css@ver=13.4.1.2.css' type='text/css' media='all' />
+<style id='__EPYT__style-inline-css' type='text/css'>
+
+                .epyt-gallery-thumb {
+                        width: 33.333%;
+                }
+                
+</style>
+<link rel='stylesheet' id='jetpack_css-css' href='jetpack/css/jetpack.css@ver=9.2.2.css' type='text/css' media='all' />
+<script type="117eb6af318f31606229c9fb-text/javascript" src='jquery/jquery.min.js@ver=3.5.1' id='jquery-core-js'></script>
+<script type="117eb6af318f31606229c9fb-text/javascript" src='jquery/jquery-migrate.min.js@ver=3.3.2' id='jquery-migrate-js'></script>
+<script type="117eb6af318f31606229c9fb-text/javascript" id='cookie-law-info-js-extra'>
+/* <![CDATA[ */
+var Cli_Data = {"nn_cookie_ids":[],"cookielist":[],"ccpaEnabled":"","ccpaRegionBased":"","ccpaBarEnabled":"","ccpaType":"gdpr","js_blocking":"","custom_integration":"","triggerDomRefresh":""};
+var cli_cookiebar_settings = {"animate_speed_hide":"500","animate_speed_show":"500","background":"#73b819","border":"#b1a6a6c2","border_on":"","button_1_button_colour":"#2ca803","button_1_button_hover":"#238602","button_1_link_colour":"#fff","button_1_as_button":"1","button_1_new_win":"","button_2_button_colour":"#333","button_2_button_hover":"#292929","button_2_link_colour":"#444","button_2_as_button":"","button_2_hidebar":"","button_3_button_colour":"#000","button_3_button_hover":"#000000","button_3_link_colour":"#fff","button_3_as_button":"1","button_3_new_win":"","button_4_button_colour":"#ffffff","button_4_button_hover":"#cccccc","button_4_link_colour":"#3aa500","button_4_as_button":"1","font_family":"inherit","header_fix":"","notify_animate_hide":"1","notify_animate_show":"1","notify_div_id":"#cookie-law-info-bar","notify_position_horizontal":"right","notify_position_vertical":"bottom","scroll_close":"","scroll_close_reload":"","accept_close_reload":"","reject_close_reload":"","showagain_tab":"1","showagain_background":"#fff","showagain_border":"#000","showagain_div_id":"#cookie-law-info-again","showagain_x_position":"100px","text":"#ffffff","show_once_yn":"","show_once":"10000","logging_on":"","as_popup":"","popup_overlay":"1","bar_heading_text":"","cookie_bar_as":"banner","popup_showagain_position":"bottom-right","widget_position":"left"};
+var log_object = {"ajax_url":"https:\/\/www.#\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type="117eb6af318f31606229c9fb-text/javascript" src='cookie-law-info/public/js/cookie-law-info-public.js@ver=1.9.5' id='cookie-law-info-js'></script>
+<script type="117eb6af318f31606229c9fb-text/javascript" src='photo-gallery/js/jquery.sumoselect.min.js@ver=3.0.3' id='sumoselect-js'></script>
+<script type="117eb6af318f31606229c9fb-text/javascript" src='photo-gallery/js/jquery.mobile.min.js@ver=1.4.5' id='jquery-mobile-js'></script>
+<script type="117eb6af318f31606229c9fb-text/javascript" src='photo-gallery/js/jquery.mCustomScrollbar.concat.min.js@ver=1.5.66' id='mCustomScrollbar-js'></script>
+<script type="117eb6af318f31606229c9fb-text/javascript" src='photo-gallery/js/jquery.fullscreen-0.4.1.min.js@ver=0.4.1' id='jquery-fullscreen-js'></script>
+<script type="117eb6af318f31606229c9fb-text/javascript" id='bwg_frontend-js-extra'>
+/* <![CDATA[ */
+var bwg_objectsL10n = {"bwg_field_required":"se requiere el campo.","bwg_mail_validation":"Esta no es una direcci\u00f3n de correo electr\u00f3nico v\u00e1lida.","bwg_search_result":"No hay im\u00e1genes que coincidan con su b\u00fasqueda.","bwg_select_tag":"Seleccionar etiqueta","bwg_order_by":"Order By","bwg_search":"Buscar","bwg_show_ecommerce":"Mostrar carrito ecommerce","bwg_hide_ecommerce":"Ocultar carrito ecomerce","bwg_show_comments":"Mostrar comentarios","bwg_hide_comments":"Ocultar comentarios","bwg_restore":"Restaurar","bwg_maximize":"Maximizar","bwg_fullscreen":"Pantalla completa","bwg_exit_fullscreen":"Salir de pantalla completa","bwg_search_tag":"SEARCH...","bwg_tag_no_match":"No tags found","bwg_all_tags_selected":"All tags selected","bwg_tags_selected":"tags selected","play":"Reproducir","pause":"Pausar","is_pro":"","bwg_play":"Reproducir","bwg_pause":"Pausar","bwg_hide_info":"Ocultar informaci\u00f3n","bwg_show_info":"Mostrar informaci\u00f3n","bwg_hide_rating":"Ocultar puntuaci\u00f3n","bwg_show_rating":"Mostrar puntuaci\u00f3n","ok":"Ok","cancel":"Cancel","select_all":"Seleccionar todo","lazy_load":"0","lazy_loader":"https:\/\/www.#\/wp-content\/plugins\/photo-gallery\/images\/ajax_loader.png","front_ajax":"0"};
+/* ]]> */
+</script>
+<script type="117eb6af318f31606229c9fb-text/javascript" src='photo-gallery/js/scripts.min.js@ver=1.5.66' id='bwg_frontend-js'></script>
+<script type="117eb6af318f31606229c9fb-text/javascript" id='foodiepress-plugin-script-js-extra'>
+/* <![CDATA[ */
+var foodiepress = {"ajaxurl":"https:\/\/www.#\/wp-admin\/admin-ajax.php","nonce":"39ad02266b","addedtolist":"Agregado a Listado de Favoritos!"};
+/* ]]> */
+</script>
+<script type="117eb6af318f31606229c9fb-text/javascript" src='foodiepress/public/assets/js/public.js@ver=1.3.4' id='foodiepress-plugin-script-js'></script>
+<script type="117eb6af318f31606229c9fb-text/javascript" src='foodiepress/public/assets/js/print.js@ver=1.3.4' id='foodiepress-plugin-print-js'></script>
+<script type="117eb6af318f31606229c9fb-text/javascript" src='chow/inc/cpslider/js/cpslider.js@ver=5.6.5' id='cpslider-js-js'></script>
+<script type="117eb6af318f31606229c9fb-text/javascript" id='__ytprefs__-js-extra'>
+/* <![CDATA[ */
+var _EPYT_ = {"ajaxurl":"https:\/\/www.#\/wp-admin\/admin-ajax.php","security":"7529ed33d0","gallery_scrolloffset":"20","eppathtoscripts":"https:\/\/www.#\/wp-content\/plugins\/youtube-embed-plus\/scripts\/","eppath":"https:\/\/www.#\/wp-content\/plugins\/youtube-embed-plus\/","epresponsiveselector":"[\"iframe.__youtube_prefs__\",\"iframe[src*='youtube.com']\",\"iframe[src*='youtube-nocookie.com']\",\"iframe[data-ep-src*='youtube.com']\",\"iframe[data-ep-src*='youtube-nocookie.com']\",\"iframe[data-ep-gallerysrc*='youtube.com']\"]","epdovol":"1","version":"13.4.1.2","evselector":"iframe.__youtube_prefs__[src], iframe[src*=\"youtube.com\/embed\/\"], iframe[src*=\"youtube-nocookie.com\/embed\/\"]","ajax_compat":"","ytapi_load":"light","pause_others":"","stopMobileBuffer":"1","vi_active":"","vi_js_posttypes":[]};
+/* ]]> */
+</script>
+<script type="117eb6af318f31606229c9fb-text/javascript" src='youtube-embed-plus/scripts/ytprefs.min.js@ver=13.4.1.2' id='__ytprefs__-js'></script>
+<link rel="https://api.w.org/" href="https://www.#/wp-json/" /><link rel="alternate" type="application/json" href="https://www.#/wp-json/wp/v2/posts/5592" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.#/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.#/wp-includes/wlwmanifest.xml" />
+<meta name="generator" content="WordPress 5.6.5" />
+<link rel='shortlink' href='https://www.#/?p=5592' />
+<link rel="alternate" type="application/json+oembed" href="https://www.#/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.#%2Facompanates%2Fguineitos-en-escabeche-2%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.#/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.#%2Facompanates%2Fguineitos-en-escabeche-2%2F&#038;format=xml" />
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-57232775-1" type="117eb6af318f31606229c9fb-text/javascript"></script>
+<script type="117eb6af318f31606229c9fb-text/javascript">
+				window.dataLayer = window.dataLayer || [];
+				function gtag(){dataLayer.push(arguments);}
+				gtag('js', new Date());
+				gtag( 'config', 'UA-57232775-1' );
+			</script>
+<meta property="fb:app_id" content="872354062793685" />
+<meta property="fb:admins" content="" />
+<meta property="og:locale" content="es_ES" />
+<meta property="og:locale:alternate" content="es_ES" />
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4NKSWTGEGK" type="117eb6af318f31606229c9fb-text/javascript"></script>
+<script type="117eb6af318f31606229c9fb-text/javascript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4NKSWTGEGK');
+</script>
+<meta name="p:domain_verify" content="6c5a455cbeaa567078544ce5b8b59352" /><script type="117eb6af318f31606229c9fb-text/javascript">
+							SG_POPUPS_QUEUE = [];
+							SG_POPUP_DATA = [];
+							SG_APP_POPUP_URL = 'https://www.#/wp-content/plugins/popup-builder-platinum';
+							SG_POPUP_VERSION='3.23_4;';
+							function sgAddEvent(element, eventName, fn) {
+								if (element.addEventListener)
+									element.addEventListener(eventName, fn, false);
+								else if (element.attachEvent)
+									element.attachEvent('on' + eventName, fn);
+							}
+						</script><script type="117eb6af318f31606229c9fb-text/javascript">
+		SG_POPUPS_QUEUE = []</script><link rel="apple-touch-icon" sizes="180x180" href="https://www.#/wp-content/uploads/fbrfg/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://www.#/wp-content/uploads/fbrfg/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://www.#/wp-content/uploads/fbrfg/favicon-16x16.png">
+<link rel="manifest" href="https://www.#/wp-content/uploads/fbrfg/site.webmanifest">
+<link rel="mask-icon" href="https://www.#/wp-content/uploads/fbrfg/safari-pinned-tab.svg" color="#ff0000">
+<link rel="shortcut icon" href="fbrfg/favicon.ico">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-config" content="/wp-content/uploads/fbrfg/browserconfig.xml">
+<meta name="theme-color" content="#ff0000"><style type='text/css'>img#wpstats{display:none}</style><style type="text/css">
+    body {  }
+    h1, h2, h3, h4, h5, h6  {  }
+    #logo h1 a, #logo h2 a {  }
+    #navigation .menu > li > a, #navigation ul li a {    }
+    a.blockTitle,
+    .rsSlideTitle.title a {    }
+    </style>
+<style type="text/css">
+    .boxed #logo,#logo {
+        margin-top:0px;        margin-bottom:0px;    }
+    #header #navigation {
+        margin-top:0px;    }
+    #blogdesc {
+        margin-top:0px;    }
+.rsDefaultInv .rsThumb.rsNavSelected {
+    -webkit-box-shadow: inset 0px -1px 0px 0px rgba(115,184,25, 0.12), 1px 0px 0px 0px #73b819;
+    -moz-box-shadow: inset 0px -1px 0px 0px rgba(115,184,25,, 0.12), 1px 0px 0px 0px #73b819;
+    box-shadow: inset 0px -1px 0px 0px rgba(115,184,25, 0.12), 1px 0px 0px 0px #73b819;
+}
+#current,
+.menu ul li a:hover,
+.menu ul > li:hover > a,
+.menu ul ul,
+.rsDefaultInv .rsThumb.rsNavSelected,
+.rsDefault .rsThumb.rsNavSelected,
+.menu > ul > li.current-menu-ancestor > a, .menu > ul > li.current-menu-item > a, #current,
+
+.foodiepress-wrapper.recipe2 .instructions ul > li.active:before,
+.foodiepress-wrapper.recipe1 .instructions ul > li.active:before,
+.foodiepress-wrapper.recipe1 .ingredients li.active:before,
+.foodiepress-wrapper.recipe1 .ingredients a:hover:after,
+.foodiepress-wrapper.recipe2 .ingredients-container .ingredients a:hover:after,
+.foodiepress-wrapper.recipe2 .ingredients li.active:before {
+    border-color: #73b819;
+}
+
+.alternative #current:hover,
+.wp-core-ui .button:hover,
+.foodiepress-wrapper.recipe1 .instructions ul > li.active:before,
+.foodiepress-wrapper.recipe2 .instructions ul > li.active:before,
+.menu.alternative ul li a:hover,
+.menu.alternative ul > li.sfHover > a {
+    background-color: #73b819 !important;
+}
+
+
+.rsDefault .rsArrowIcn:hover,
+a.print,
+.ingredients input[type=checkbox]:checked + label:before,
+#slider-prev:hover,
+#slider-next:hover,
+.search button,
+#bbpress-forums .topic-author div.bbp-reply-header,
+.rsSlideTitle.tags ul li,
+ul.categories li a:hover,
+.post-icon,
+.rate-recipe,
+.comment-by a.reply:hover,
+.comment-by a.comment-reply-link:hover,
+.newsletter-btn,
+.mc4wp-form input[type="submit"], 
+.product-button,
+.search-by-keyword button,
+.chosen-container .chosen-results li.highlighted,
+.chosen-container-multi .chosen-choices li.search-choice,
+.woocommerce-MyAccount-navigation li.is-active a,
+.tabs-nav li.active a,
+.ui-accordion .ui-accordion-header-active:hover,
+.ui-accordion .ui-accordion-header-active,
+a.nav-toggle.active,
+.upload-btn,
+a.button.color, input[type="button"], input.button.color,
+.widget_categories ul li a:hover,
+input[type="submit"],
+.nav-links a:hover,
+a.button.light:hover,
+#advanced-search .search-by-keyword button, .search .search-by-keyword button,
+nav.search button, aside.search button,
+.foodiepress-wrapper.recipe1 .ingredients li.active:before,
+.foodiepress-wrapper.recipe2 .ingredients li.active:before,
+.pagination ul li a.current-page { background-color: #73b819; }
+
+
+.rsDefaultInv .rsThumb.rsNavSelected,
+a.blockTitle:hover,
+.rsDefault .rsThumb.rsNavSelected,
+.rsDefault .rsThumbsArrow:hover,
+.qtyplus:hover,
+.qtyminus:hover,
+body input[type="button"]:hover,
+.quantity input.plus:hover, 
+.quantity input.minus:hover, 
+a.cart-remove:hover,
+.linking .button,
+.mfp-close:hover,
+a.calculate-shipping:hover,
+.widget_price_filter .button,
+a.button.wc-forward,
+.shipping-calculator-form .button,
+.mfp-arrow:hover,
+.pagination .current,
+.pagination ul li a:hover,
+.pagination-next-prev ul li a:hover,
+.highlight.color { background: #73b819; }
+
+a,
+.author-box .title,
+.author-box .contact a:hover,
+ul.product_list_widget li a:hover,
+a.adv-search-btn.active i,
+a.adv-search-btn.active,
+a.adv-search-btn:hover i,
+a.adv-search-btn:hover,
+.foodiepress-wrapper.recipe1 .ingredients a:hover,
+.foodiepress-wrapper.recipe2 .ingredients a:hover,
+.comment-by a.url:hover,
+.author-box a:hover span,
+.post-meta a:hover,
+table.cart-table td.product-name a:hover,
+.widget ul li a:hover,
+.basic-table.fav-recipes .recipe-title a:hover,
+.list-1.color li:before,
+.list-2.color li:before,
+.list-3.color li:before,
+.list-4.color li:before { color: #73b819; }
+
+
+</style>
+<link rel="icon" href="https://www.#/wp-content/uploads/2014/12/cropped-DefaultIcon2-547e0516_site_icon-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://www.#/wp-content/uploads/2014/12/cropped-DefaultIcon2-547e0516_site_icon-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.#/wp-content/uploads/2014/12/cropped-DefaultIcon2-547e0516_site_icon-180x180.png" />
+<meta name="msapplication-TileImage" content="https://www.#/wp-content/uploads/2014/12/cropped-DefaultIcon2-547e0516_site_icon-270x270.png" />
+<div align="center">
+<noscript>
+		<div style="position:fixed; top:0px; left:0px; z-index:3000; height:100%; width:100%; background-color:#FFFFFF">
+			<br/><br/>
+			<div style="font-family: Tahoma; font-size: 14px; background-color:#FFFFCC; border: 1pt solid Black; padding: 10pt;">
+				Sorry, you have Javascript Disabled! To see this page as it is meant to appear, please enable your Javascript!
+			</div>
+		</div>
+	</noscript>
+</div>
+</head>
+<body class="post-template-default single single-post postid-5592 single-format-standard wp-custom-logo boxed group-blog">
+
+<div id="wrapper">
+
+<header id="header">
+
+<div class="container ">
+
+<div class="six columns">
+<div id="logo">
+<h2><a href="https://www.#/" title="#" rel="home"><img src="2017/03/Banner02.jpg" alt="#" /></a></h2>
+</div>
+</div>
+
+<div class=" columns navigation sixteen">
+<nav id="navigation" class="alternative menu nav-collapse">
+<ul id="menu-menu-principal" class="menu"><li id="menu-item-4000" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4000"><a href="https://www.#/category/granos/">Arroz con&#8230;</a></li>
+<li id="menu-item-4006" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4006"><a href="https://www.#/category/aves/">Aves</a></li>
+<li id="menu-item-4380" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4380"><a href="https://www.#/category/carnes,res,cerdo/">Carnes</a>
+<ul class="sub-menu">
+<li id="menu-item-5931" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5931"><a href="https://www.#/category/cerdo/">Carne de Cerdo</a></li>
+<li id="menu-item-5932" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5932"><a href="https://www.#/category/res/">Carne de Res</a></li>
+</ul>
+</li>
+<li id="menu-item-4396" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4396"><a href="https://www.#/category/mar,mariscos,pescados/">Del Mar</a>
+<ul class="sub-menu">
+<li id="menu-item-5933" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5933"><a href="https://www.#/category/mariscos/">Mariscos</a></li>
+<li id="menu-item-5934" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5934"><a href="https://www.#/category/pescados/">Pescados</a></li>
+</ul>
+</li>
+<li id="menu-item-5929" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5929"><a href="https://www.#/category/legumbres/">Legumbres</a></li>
+<li id="menu-item-3718" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3718"><a href="https://www.#/category/frituras/">Frituras</a></li>
+<li id="menu-item-4708" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4708"><a href="https://www.#/category/postres/">Postres</a></li>
+<li id="menu-item-3730" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3730"><a href="https://www.#/?page_id=3727">Bebidas</a></li>
+<li id="menu-item-1545" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children menu-item-1545"><a href="https://www.#">Opciones</a>
+<ul class="sub-menu">
+<li id="menu-item-4313" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4313"><a href="https://www.#/pagina-menu-principal/recetas-vegetarianas/">Recetas Vegetarianas</a></li>
+<li id="menu-item-4413" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4413"><a href="https://www.#/legales/terminos-de-uso/">Términos de Uso</a></li>
+<li id="menu-item-4451" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4451"><a href="https://www.#/legales/privacy/">Política de Privacidad</a></li>
+<li id="menu-item-4054" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4054"><a href="https://www.gofundme.com/cf7rq39b">Ayúdanos a Financiar las Traducciones</a></li>
+<li id="menu-item-1565" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1565"><a href="https://www.#/?feed=rss2">RSS De Las Entradas</a></li>
+<li id="menu-item-3710" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3710"><a href="https://www.#/wp-admin/">Acceder</a></li>
+</ul>
+</li>
+</ul> </nav>
+</div>
+</div>
+
+</header>
+
+<div class="recipeBackground">
+<img src="2017/03/Banner-Morro.jpg" alt="" />
+</div>
+
+<div class="container">
+
+<div class="twelve columns   ">
+<div class="alignment">
+<article class="no-recipe post-5592 post type-post status-publish format-standard has-post-thumbnail hentry category-acompanates category-entremeses category-vegetariano tag-como-hacer-guineo-en-escabeche tag-gineito-en-escaveche tag-gineito-en-escaveches tag-gineitos-en-escaveches tag-gineos-en-escabeche tag-gineos-en-escaveche tag-guineito-en-escabeche tag-guineito-en-escaveches tag-guineitos-en-escabeche tag-guineitos-en-escabeche-receta tag-guineitos-en-escaveche tag-guineos-en-escabeche tag-guineos-en-escabeche-receta tag-guineos-en-escaveche tag-guineos-verdes-en-escabeche tag-la-semana-pasada tag-menu-navideno tag-receta-de-guineito-en-escabeche tag-receta-de-guineitos-en-escabeche tag-receta-de-guineitos-en-escabeche-puertorriqueno-de-puerto-rico tag-receta-de-guineos-en-escabeche-de-pr tag-receta-guineos-en-escabeche tag-receta-para-guineitos-en-escabache tag-receta-para-guineitos-en-escabeche tag-recetas-de-guineitos-en-escabeches-puertorriquenos-de-puerto-rico tag-recetas-de-guineos-en-escabeche tag-recetas-de-guineos-verdes" id="post-5592">
+
+<section class="recipe-header">
+<div class="title-alignment">
+<h1>Guineitos en Escabeche</h1>
+</div>
+</section>
+<div class="recipeSlider recipeSlider-single rsDefault">
+<a class="print-only mfp-image" href="2013/01/GuineitosEnEscabeche-1.jpg"><img class="rsImg" src="2013/01/GuineitosEnEscabeche-1.jpg" alt="Guineitos en Escabeche" data-rsTmb="https://www.#/wp-content/uploads/2013/01/GuineitosEnEscabeche-1.jpg" /></a>
+</div>
+<div class="post-content ">
+<blockquote>
+<h2>Receta de Guineitos en Escabeche</h2>
+<p>Por Andy Tous para #<br />
+(Foto cortesía de Dayi Collazo)</p>
+<p>Unos guineitos en escabeche son los perfectos acompañantes ya sean como entremeses o acompañantes de cualquier plato típico de nuestra isla.</p></blockquote>
+<p><span id="more-5592"></span><br />
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" type="117eb6af318f31606229c9fb-text/javascript"></script><br />
+<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-8029383042078455" data-ad-slot="5027474013"></ins><br />
+<script type="117eb6af318f31606229c9fb-text/javascript">
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+<h4><strong>Ingredientes</strong></h4>
+<ul>
+<li>10 guineos verdes</li>
+<li>1 cebolla blanca (grande)</li>
+<li>1 taza de vinagre blanco</li>
+<li>15 a 20 aceitunas (sin pepitas)</li>
+<li>3 dientes de ajo (machacado)</li>
+<li>1 cucharadita de sal</li>
+<li>2 hojas de laurel</li>
+<li>10 granos de pimienta</li>
+<li>3 tazas de aceite de oliva virgen «light»</li>
+<li>2 cuartos de agua</li>
+</ul>
+<h4><strong>Procedimiento</strong></h4>
+<ol>
+<li>En una cacerola, hierve 2 cuartos de tazas de agua con sal.<br />
+Corta ambos extremos del guineo (las puntas) y haga una incisión a cada lado y a lo largo del mismo.</li>
+<li>Ponga los guineos a hervir hasta que la cáscara cambie a color marrón. Note que estarán listos cuando la cascara se despegue fácilmente pero el guineo debe estar firme (no deje que se cocine demasiado por que se deshace).</li>
+<li>Mientras los guineos hierven, mezcle la cebolla blanca, el vinagre blanco, las aceitunas, los dientes de ajo, las hojas de laurel y los granos de pimienta con el aceite de oliva en una cacerola a fuego medio hasta que caliente (no deje que hierva). Muévalo de vez en cuando para mezclar bien.</li>
+<li>Saque los guineos y viértalos en agua fría (para que se pongan firmes).</li>
+<li>Corte los guineos en rodajas de 1/2 a 1 pulgada.</li>
+<li>Coloca los guineos en un envase de plástico o cristal con tapa.  Vierta la salsa del escabeche sobre los guineitos y tape el envase.</li>
+<li>Deje enfriar (ya sea en la nevera o a temperatura de ambiente).</li>
+</ol>
+<blockquote><p>Nota: Por lo general, los guineitos en escabeche adquieren mejor sabor cuando se dejan curar por lo menos por 24 horas.</p></blockquote>
+<h3>Recomendamos</h3>
+<p><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" type="117eb6af318f31606229c9fb-text/javascript"></script><br />
+<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-8029383042078455" data-ad-slot="5027474013"></ins><br />
+<script type="117eb6af318f31606229c9fb-text/javascript">
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+<h3 class='coments-title'>Comentarios</h3><fb:comments href="https://www.#/acompanates/guineitos-en-escabeche-2/" num_posts="6" width="100%" colorscheme="light"></fb:comments> <div class="clearfix"></div>
+<span class="divider"></span>
+
+<ul class="share-post">
+<li><a target="_blank" class="facebook-share" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.#%2Facompanates%2Fguineitos-en-escabeche-2%2F">Facebook</a></li> <li><a target="_blank" class="twitter-share" href="https://twitter.com/share?url=https%3A%2F%2Fwww.#%2Facompanates%2Fguineitos-en-escabeche-2%2F&amp;text=" title="Twitter">Twitter</a></li> <li><a target="_blank" class="google-plus-share" href="https://plus.google.com/share?url=https%3A%2F%2Fwww.#%2Facompanates%2Fguineitos-en-escabeche-2%2F&amp;title=" Guineitos+en+Escabeche" onclick="if (!window.__cfRLUnblockHandlers) return false; javascript:window.open(this.href, &quot;&quot;, &quot;menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600&quot;);return false;" data-cf-modified-117eb6af318f31606229c9fb-="">Google Plus</a></li> <li><a target="_blank" class="pinterest-share" href="http://pinterest.com/pin/create/button/?url=https%3A%2F%2Fwww.#%2Facompanates%2Fguineitos-en-escabeche-2%2F&amp;description=&media=https%3A%2F%2Fwww.#%2Fwp-content%2Fuploads%2F2013%2F01%2FGuineitosEnEscabeche-1-300x166.jpg" onclick="if (!window.__cfRLUnblockHandlers) return false; window.open(this.href); return false;" data-cf-modified-117eb6af318f31606229c9fb-="">Pinterest</a></li>
+
+</ul>
+<div class="clearfix"></div><div class="post-meta"><span itemscope itemtype="http://data-vocabulary.org/Person"><i class="fa fa-user"></i>Por <a class="author-link" itemprop="url" rel="author" href="https://www.#/author/andytous/">Andy Tous</a></span><span><i class="fa fa-file"></i><a href="https://www.#/category/acompanates/" rel="category tag">Acompañantes</a>, <a href="https://www.#/category/acompanates/entremeses/" rel="category tag">Entremeses</a>, <a href="https://www.#/category/vegetariano/" rel="category tag">Vegetariano</a></span><span><i class="fa fa-comment"></i><span class="comments-link">Comentarios apagado</span></span><span><i class="fa fa-calendar"></i> <time class="entry-date published" datetime="2019-11-26T14:45:27-04:00">noviembre 26, 2019</time><time class="updated" datetime="2020-12-25T21:09:05-04:00">diciembre 25, 2020</time></span></div>
+<div class="clearfix"></div>
+</div>
+
+<div class="related-posts"> <h3 class="headline">Puede que también te guste</h3>
+<span class="line margin-bottom-35"></span>
+<div class="clearfix"></div>
+<div class="four recipe-box columns">
+
+<div class="thumbnail-holder">
+<a href="https://www.#/postres/arroz-con-dulce/">
+<img width="420" height="233" src="2012/12/ArrozConDulce01-1.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Arroz Con Dulce" loading="lazy" srcset="https://www.#/wp-content/uploads/2012/12/ArrozConDulce01-1.jpg 672w, https://www.#/wp-content/uploads/2012/12/ArrozConDulce01-1-300x166.jpg 300w, https://www.#/wp-content/uploads/2012/12/ArrozConDulce01-1-150x83.jpg 150w, https://www.#/wp-content/uploads/2012/12/ArrozConDulce01-1-500x276.jpg 500w" sizes="(max-width: 420px) 100vw, 420px" /> <div class="hover-cover"></div>
+<div class="hover-icon">Ver Receta</div>
+</a>
+</div>
+
+<div class="recipe-box-content">
+<h3><a href="https://www.#/postres/arroz-con-dulce/">Arroz con Dulce</a></h3>
+<div class="clearfix"></div>
+</div>
+</div>
+<div class="four recipe-box columns">
+
+<div class="thumbnail-holder">
+<a href="https://www.#/acompanates/ensalada-de-granos/">
+<img width="420" height="233" src="2016/11/EnsaladaDeGranos-2016.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Ensalada de Granos" loading="lazy" srcset="https://www.#/wp-content/uploads/2016/11/EnsaladaDeGranos-2016.jpg 672w, https://www.#/wp-content/uploads/2016/11/EnsaladaDeGranos-2016-168x93.jpg 168w, https://www.#/wp-content/uploads/2016/11/EnsaladaDeGranos-2016-336x186.jpg 336w, https://www.#/wp-content/uploads/2016/11/EnsaladaDeGranos-2016-600x332.jpg 600w" sizes="(max-width: 420px) 100vw, 420px" /> <div class="hover-cover"></div>
+<div class="hover-icon">Ver Receta</div>
+</a>
+</div>
+
+<div class="recipe-box-content">
+<h3><a href="https://www.#/acompanates/ensalada-de-granos/">Ensalada de Granos</a></h3>
+<div class="clearfix"></div>
+</div>
+</div>
+<div class="four recipe-box columns">
+
+<div class="thumbnail-holder">
+<a href="https://www.#/acompanates/camarones-salsa-mango/">
+<img width="420" height="233" src="2016/09/Camarones-En-Salsa-De-Mango_Chef-Edgardo-Noel.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Camarones en Salsa de Mango" loading="lazy" srcset="https://www.#/wp-content/uploads/2016/09/Camarones-En-Salsa-De-Mango_Chef-Edgardo-Noel.jpg 672w, https://www.#/wp-content/uploads/2016/09/Camarones-En-Salsa-De-Mango_Chef-Edgardo-Noel-168x93.jpg 168w, https://www.#/wp-content/uploads/2016/09/Camarones-En-Salsa-De-Mango_Chef-Edgardo-Noel-336x186.jpg 336w, https://www.#/wp-content/uploads/2016/09/Camarones-En-Salsa-De-Mango_Chef-Edgardo-Noel-600x332.jpg 600w" sizes="(max-width: 420px) 100vw, 420px" /> <div class="hover-cover"></div>
+<div class="hover-icon">Ver Receta</div>
+</a>
+</div>
+
+<div class="recipe-box-content">
+<h3><a href="https://www.#/acompanates/camarones-salsa-mango/">Camarones en Salsa de Mango</a></h3>
+<div class="clearfix"></div>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="margin-top-15"></div>
+<nav class="navigation post-navigation" role="navigation">
+<h3 class="screen-reader-text">Post navigation</h3>
+<div class="nav-links">
+<div class="nav-previous"><a href="https://www.#/referencia/tutoriales/como-pelar-un-apio/" rel="prev"><span class="meta-nav">&larr;</span>&nbsp;Como Pelar un Apio</a></div><div class="nav-next"><a href="https://www.#/referencia/pan-liviano-y-esponjoso/" rel="next">Pan Liviano y Esponjoso&nbsp;<span class="meta-nav">&rarr;</span></a></div> </div>
+</nav>
+</article>
+</div> 
+</div> 
+<div class="four columns sidebar">
+<div id="widget_sp_image-20" class="widget widget_sp_image"><a href="https://www.#/wp-login.php?redirect_to=https://www.#/" target="_self" class="widget_sp_image-image-link"><img width="218" height="42" class="attachment-full aligncenter" style="max-width: 100%;" srcset="https://www.#/wp-content/uploads/2017/03/Registro.jpg 218w, https://www.#/wp-content/uploads/2017/03/Registro-168x32.jpg 168w" sizes="(max-width: 218px) 100vw, 218px" src="2017/03/Registro.jpg" /></a></div><div id="foodiepress_favposts-3" class="widget foodiepress_favposts">
+</div><div id="widget_sp_image-9" class="widget widget_sp_image"><h4 class="headline">Sobre el Autor</h4><span class="line margin-bottom-30"></span><div class="clearfix"></div><img width="150" height="150" alt="Sobre el Autor" class="attachment-150x150 aligncenter" style="max-width: 100%;" src="2017/03/Chef-Andy.jpg" /></div><div id="chow_author-3" class="widget chow_author"> <div class="author-box">
+<img alt='' src='https://secure.gravatar.com/avatar/3b391bdddd80253b6fd87b4de6fb76c9?s=128&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/3b391bdddd80253b6fd87b4de6fb76c9?s=256&#038;d=mm&#038;r=g 2x' class='avatar avatar-128 photo' height='128' width='128' loading='lazy' /> <span class="title"> </span>
+<span class="name"><a href="https://www.#/author/andytous/">Andy Tous</a></span>
+<p>Editor Ejecutivo en #. Su pasión por la cocina puertorriqueña lo lleva a construir una de las mejores bases de datos de recetas puertorriqueñas, las cuales las expone gratuitamente. Así llevando nuestra cultura a las nuevas generaciones y a los rincones mas remotos del mundo.</p>
+<a href="https://www.#/author/andytous/" class="author_link">Mira mas de sus artículos...</a>
+</div>
+</div><div id="custom_html-2" class="widget_text widget widget_custom_html"><h4 class="headline">Auspicios</h4><span class="line margin-bottom-30"></span><div class="clearfix"></div><div class="textwidget custom-html-widget"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" type="117eb6af318f31606229c9fb-text/javascript"></script>
+
+<ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-8029383042078455" data-ad-slot="8805569943"></ins>
+<script type="117eb6af318f31606229c9fb-text/javascript">
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div></div><div id="custom_html-13" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" type="117eb6af318f31606229c9fb-text/javascript"></script>
+
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8029383042078455" data-ad-slot="6862607325" data-ad-format="auto"></ins>
+<script type="117eb6af318f31606229c9fb-text/javascript">
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div></div><div id="custom_html-14" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" type="117eb6af318f31606229c9fb-text/javascript"></script>
+
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8029383042078455" data-ad-slot="8339340521" data-ad-format="auto"></ins>
+<script type="117eb6af318f31606229c9fb-text/javascript">
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div></div><div id="custom_html-15" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" type="117eb6af318f31606229c9fb-text/javascript"></script>
+
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8029383042078455" data-ad-slot="1534402824" data-ad-format="auto"></ins>
+<script type="117eb6af318f31606229c9fb-text/javascript">
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div></div></div>
+</div>
+</div>
+
+
+<div id="footer">
+
+<div class="container">
+<div class="five columns">
+<div id="virp-widget-8" class="footer-widget widget virp-random-widget"><h3 class="headline footer">Mas Recetas</h3><span class="line"></span><div class="clearfix"></div><div id="virp-random-posts" class="virp-random-post"><ul class="virp-ul"><li class="virp-li virp-clearfix virp-thumbnail "><a href="https://www.#/platosprincipales/camarones-al-ajillo/" rel="bookmark"><img width="50" height="28" src="2014/06/CamaronesAlAjillo.jpg" class="virp-thumbnail align fdfgleft wp-post-image" alt="Camarones al Ajillo" loading="lazy" srcset="https://www.#/wp-content/uploads/2014/06/CamaronesAlAjillo.jpg 672w, https://www.#/wp-content/uploads/2014/06/CamaronesAlAjillo-300x166.jpg 300w" sizes="(max-width: 50px) 100vw, 50px" /></a><a class="virp-title" href="https://www.#/platosprincipales/camarones-al-ajillo/" title="Permalink to Camarones al Ajillo" rel="bookmark">Camarones al Ajillo</a><div class="virp-clear"></div><div class="virp-clear"></div></li><li class="virp-li virp-clearfix virp-thumbnail "><a href="https://www.#/platos-principales/salmorejo-de-jueyes/" rel="bookmark"><img width="50" height="28" src="2014/12/SalmorejoDeJueyes-1.jpg" class="virp-thumbnail align fdfgleft wp-post-image" alt="Salmorejo de Jueyes" loading="lazy" srcset="https://www.#/wp-content/uploads/2014/12/SalmorejoDeJueyes-1.jpg 672w, https://www.#/wp-content/uploads/2014/12/SalmorejoDeJueyes-1-300x166.jpg 300w" sizes="(max-width: 50px) 100vw, 50px" /></a><a class="virp-title" href="https://www.#/platos-principales/salmorejo-de-jueyes/" title="Permalink to Salmorejo de Jueyes" rel="bookmark">Salmorejo de Jueyes</a><div class="virp-clear"></div><div class="virp-clear"></div></li><li class="virp-li virp-clearfix virp-thumbnail "><a href="https://www.#/platosprincipales/bistec-encebollao-2/" rel="bookmark"><img width="50" height="28" src="2013/11/BistecEncebollao01-1.jpg" class="virp-thumbnail align fdfgleft wp-post-image" alt="Bistec Encebollao" loading="lazy" srcset="https://www.#/wp-content/uploads/2013/11/BistecEncebollao01-1.jpg 672w, https://www.#/wp-content/uploads/2013/11/BistecEncebollao01-1-300x166.jpg 300w" sizes="(max-width: 50px) 100vw, 50px" /></a><a class="virp-title" href="https://www.#/platosprincipales/bistec-encebollao-2/" title="Permalink to Bistec Encebollao" rel="bookmark">Bistec Encebollao</a><div class="virp-clear"></div><div class="virp-clear"></div></li><li class="virp-li virp-clearfix virp-thumbnail "><a href="https://www.#/platosprincipales/arroz-con-cebolla/" rel="bookmark"><img width="50" height="28" src="2016/04/Arroz-Con-Cebolla-02.jpg" class="virp-thumbnail align fdfgleft wp-post-image" alt="Arroz con Cebolla" loading="lazy" srcset="https://www.#/wp-content/uploads/2016/04/Arroz-Con-Cebolla-02.jpg 672w, https://www.#/wp-content/uploads/2016/04/Arroz-Con-Cebolla-02-300x166.jpg 300w, https://www.#/wp-content/uploads/2016/04/Arroz-Con-Cebolla-02-600x332.jpg 600w" sizes="(max-width: 50px) 100vw, 50px" /></a><a class="virp-title" href="https://www.#/platosprincipales/arroz-con-cebolla/" title="Permalink to Arroz con Cebolla" rel="bookmark">Arroz con Cebolla</a><div class="virp-clear"></div><div class="virp-clear"></div></li><li class="virp-li virp-clearfix virp-thumbnail "><a href="https://www.#/platosprincipales/pernil-artesanal-ii/" rel="bookmark"><img width="50" height="28" src="2016/01/PernilArtesanal.jpg" class="virp-thumbnail align fdfgleft wp-post-image" alt="Pernil Artesanal II" loading="lazy" srcset="https://www.#/wp-content/uploads/2016/01/PernilArtesanal.jpg 672w, https://www.#/wp-content/uploads/2016/01/PernilArtesanal-300x166.jpg 300w" sizes="(max-width: 50px) 100vw, 50px" /></a><a class="virp-title" href="https://www.#/platosprincipales/pernil-artesanal-ii/" title="Permalink to Pernil Artesanal II" rel="bookmark">Pernil Artesanal II</a><div class="virp-clear"></div><div class="virp-clear"></div></li></ul></div></div> </div>
+<div class="three columns">
+<div id="text-6" class="footer-widget widget widget_text"><h3 class="headline footer">Legales</h3><span class="line"></span><div class="clearfix"></div> <div class="textwidget"><ul>
+<li><a href="https://www.#/legales/terminos-de-uso/" target="_blank" rel="noopener">- Términos de Uso</a></li>
+<li><a href="https://www.#/legales/privacy/" target="_blank" rel="noopener">- Política de Privacidad</a></li>
+<li><a href="https://www.#/politica-de-cookies/" target="_blank" rel="noopener">- Política de Cookies</a></li>
+</ul>
+</div>
+</div><div id="text-7" class="footer-widget widget widget_text"> <div class="textwidget"><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />Todo el contenido está bajo <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Licencias Creative Commons Atribución-NoComercial-SinDerivar 4.0 Internacional</a>.</div>
+</div> </div>
+<div class="three columns">
+</div>
+<div class="five columns">
+<div id="custom_html-10" class="widget_text footer-widget widget widget_custom_html"><div class="textwidget custom-html-widget"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" type="117eb6af318f31606229c9fb-text/javascript"></script>
+
+<ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-8029383042078455" data-ad-slot="3279320928"></ins>
+<script type="117eb6af318f31606229c9fb-text/javascript">
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div></div> </div>
+</div>
+
+</div>
+
+
+<div id="footer-bottom">
+
+<div class="container">
+<div class="eight columns">
+@ 2020 Blogistix, Inc - Derechos Reservados | Recetas De Puerto Rico</div>
+</div>
+
+</div>
+
+
+<div id="backtotop"><a href="index.html#"></a></div>
+<!--googleoff: all--><div id="cookie-law-info-bar" data-nosnippet="true"><span># utiliza cookies para mejorar su experiencia. Asumiremos que está de acuerdo con esto, pero puede optar por no participar. <a role='button' tabindex='0' class="small cli-plugin-button cli-plugin-main-button cli_settings_button" style="margin:5px 20px 5px 20px;">Configurar Cookies</a><a role='button' tabindex='0' data-cli_action="accept" id="cookie_action_close_header" class="small cli-plugin-button cli-plugin-main-button cookie_action_close_header cli_action_button" style="display:inline-block;  margin:5px; ">ACCEPTAR</a></span></div><div id="cookie-law-info-again" style="display:none;" data-nosnippet="true"><span id="cookie_hdr_showagain">Ajustes y Privacidad de Cookies</span></div><div class="cli-modal" data-nosnippet="true" id="cliSettingsPopup" tabindex="-1" role="dialog" aria-labelledby="cliSettingsPopup" aria-hidden="true">
+<div class="cli-modal-dialog" role="document">
+<div class="cli-modal-content cli-bar-popup">
+<button type="button" class="cli-modal-close" id="cliModalClose">
+<svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"></path><path d="M0 0h24v24h-24z" fill="none"></path></svg>
+<span class="wt-cli-sr-only">Cerrar</span>
+</button>
+<div class="cli-modal-body">
+<div class="cli-container-fluid cli-tab-container">
+<div class="cli-row">
+<div class="cli-col-12 cli-align-items-stretch cli-px-0">
+<div class="cli-privacy-overview">
+<h4>Resumen de Privacidad</h4> <div class="cli-privacy-content">
+<div class="cli-privacy-content-text"># utiliza cookies para mejorar su experiencia mientras navega por nuestro sitio web. De estos cookies, los cookies que se clasifican según sea necesario se almacenan en su navegador, ya que son esenciales para el funcionamiento básico de nuestro sitio web. También utilizamos cookies de terceros que nos ayudan a analizar y comprender cómo utiliza este sitio web. Estos cookies se almacenarán en su navegador solo con su consentimiento. También tiene la opción de darse de baja de estos cookies. Pero la exclusión voluntaria de algunos de estos cookies puede afectar su experiencia de navegación.</div>
+</div>
+<a class="cli-privacy-readmore" data-readmore-text="Mostrar más" data-readless-text="Mostrar menos"></a> </div>
+</div>
+<div class="cli-col-12 cli-align-items-stretch cli-px-0 cli-tab-section-container">
+<div class="cli-tab-section">
+<div class="cli-tab-header">
+<a role="button" tabindex="0" class="cli-nav-link cli-settings-mobile" data-target="necessary" data-toggle="cli-toggle-tab">
+Necesarias </a>
+<div class="wt-cli-necessary-checkbox">
+<input type="checkbox" class="cli-user-preference-checkbox" id="wt-cli-checkbox-necessary" data-id="checkbox-necessary" checked="checked" />
+<label class="form-check-label" for="wt-cli-checkbox-necessary">Necesarias</label>
+</div>
+<span class="cli-necessary-caption">Siempre activado</span> </div>
+<div class="cli-tab-content">
+<div class="cli-tab-pane cli-fade" data-id="necessary">
+<p>Los cookies necesarios son absolutamente esenciales para que el sitio web funcione correctamente. Esta categoría solo incluye cookies que garantizan funcionalidades básicas y características de seguridad del sitio web. Estos cookies no almacenan ninguna información personal.</p>
+</div>
+</div>
+</div>
+<div class="cli-tab-section">
+<div class="cli-tab-header">
+<a role="button" tabindex="0" class="cli-nav-link cli-settings-mobile" data-target="non-necessary" data-toggle="cli-toggle-tab">
+No necesarias </a>
+<div class="cli-switch">
+<input type="checkbox" id="wt-cli-checkbox-non-necessary" class="cli-user-preference-checkbox" data-id="checkbox-non-necessary" checked='checked' />
+<label for="wt-cli-checkbox-non-necessary" class="cli-slider" data-cli-enable="Activado" data-cli-disable="Desactivado"><span class="wt-cli-sr-only">No necesarias</span></label>
+</div> </div>
+<div class="cli-tab-content">
+<div class="cli-tab-pane cli-fade" data-id="non-necessary">
+<p>Cualquier cookie que no sea particularmente necesario para que el sitio web funcione y se use específicamente para recopilar datos personales del usuario a través de análisis, anuncios y otros contenidos integrados se denominan cookies no necesarios. Es obligatorio obtener el consentimiento del usuario antes de ejecutar estas cookies en su sitio web.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cli-modal-backdrop cli-fade cli-settings-overlay"></div>
+<div class="cli-modal-backdrop cli-fade cli-popupbar-overlay"></div>
+<!--googleon: all--><div id="fb-root"></div>
+<script type="117eb6af318f31606229c9fb-text/javascript">(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&appId=872354062793685&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script type="117eb6af318f31606229c9fb-text/javascript" src='purethemes-shortcodes/js/shortcodes.js@ver=5.6.5' id='purethemes-shortcodes-js'></script>
+<script type="117eb6af318f31606229c9fb-text/javascript" id='wpccp-js-before'>
+const wpccpMessage = '',wpccpPaste = '',wpccpUrl = 'https://www.#/wp-content/plugins/wp-content-copy-protection/';
+</script>
+<script type="117eb6af318f31606229c9fb-text/javascript" src='wp-content-copy-protection/assets/js/script.min.js@ver=1609964277' id='wpccp-js'></script>
+<script type="117eb6af318f31606229c9fb-text/javascript" src='chow/js/chosen.jquery.min.js@ver=20140612' id='chow-chosen-js'></script>
+<script type="117eb6af318f31606229c9fb-text/javascript" src='chow/js/jquery.superfish.js@ver=20140612' id='chow-superfish-js'></script>
+<script type="117eb6af318f31606229c9fb-text/javascript" src='chow/js/jquery.magnific-popup.min.js@ver=20140612' id='chow-magnific-popup-js'></script>
+<script type="117eb6af318f31606229c9fb-text/javascript" src='chow/js/hoverIntent.js@ver=20140612' id='chow-hoverIntent-js'></script>
+<script type="117eb6af318f31606229c9fb-text/javascript" src='chow/js/jquery.royalslider.min.js@ver=20140612' id='chow-royalslider-js'></script>
+<script type="117eb6af318f31606229c9fb-text/javascript" src='chow/js/isotope.pkgd.min.js@ver=20140612' id='chow-isotope-js'></script>
+<script type="117eb6af318f31606229c9fb-text/javascript" src='chow/js/jquery.gmaps.min.js@ver=20140612' id='chow-gmaps-js'></script>
+<script type="117eb6af318f31606229c9fb-text/javascript" src='chow/js/jquery.tooltips.min.js@ver=20140612' id='chow-tooltip-js'></script>
+<script type="117eb6af318f31606229c9fb-text/javascript" src='chow/js/responsive-nav.js@ver=20140612' id='chow-responsive-nav-js'></script>
+<script type="117eb6af318f31606229c9fb-text/javascript" src='chow/js/dropzone.js@ver=20140612' id='chow-dropzone-js'></script>
+<script type="117eb6af318f31606229c9fb-text/javascript" id='chow-custom-js-extra'>
+/* <![CDATA[ */
+var chow = {"logo":"https:\/\/www.#\/wp-content\/uploads\/2017\/03\/Banner02.jpg","retinalogo":"https:\/\/www.#\/wp-content\/uploads\/2017\/03\/Banner02.jpg","menulabel":"Menu","isotope":"masonry"};
+/* ]]> */
+</script>
+<script type="117eb6af318f31606229c9fb-text/javascript" src='chow/js/custom.js@ver=20140612' id='chow-custom-js'></script>
+<script type="117eb6af318f31606229c9fb-text/javascript" src='jquery/ui/core.min.js@ver=1.12.1' id='jquery-ui-core-js'></script>
+<script type="117eb6af318f31606229c9fb-text/javascript" src='jquery/ui/mouse.min.js@ver=1.12.1' id='jquery-ui-mouse-js'></script>
+<script type="117eb6af318f31606229c9fb-text/javascript" src='jquery/ui/sortable.min.js@ver=1.12.1' id='jquery-ui-sortable-js'></script>
+<script type="117eb6af318f31606229c9fb-text/javascript" src='chow/js/skip-link-focus-fix.js@ver=20130115' id='chow-skip-link-focus-fix-js'></script>
+<script type="117eb6af318f31606229c9fb-text/javascript" src='youtube-embed-plus/scripts/fitvids.min.js@ver=13.4.1.2' id='__ytprefsfitvids__-js'></script>
+<script type="117eb6af318f31606229c9fb-text/javascript" src='wp-embed.min.js@ver=5.6.5' id='wp-embed-js'></script>
+<script type="117eb6af318f31606229c9fb-text/javascript" src='https://stats.wp.com/e-202142.js' async='async' defer='defer'></script>
+<script type="117eb6af318f31606229c9fb-text/javascript">
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:9.2.2',blog:'69675662',post:'5592',tz:'-4',srv:'www.#'} ]);
+	_stq.push([ 'clickTrackerInit', '69675662', '5592' ]);
+</script>
+<script src="7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="117eb6af318f31606229c9fb-|49" defer=""></script></body>
+</html>
